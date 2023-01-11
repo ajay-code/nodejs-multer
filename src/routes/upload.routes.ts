@@ -5,7 +5,7 @@ import * as uploadController from '#src/controllers/upload.controller.js'
 let upload = multer({
     dest: 'public/tmp/',
     limits: {
-        fileSize: 200000, // ~ 200KB
+        fileSize: 1000 * 1000, // ~ 1MB
     },
 })
 let uploadRouter: Router

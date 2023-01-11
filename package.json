@@ -1,6 +1,6 @@
 {
     "name": "nodejs-multer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "nodejs starter with express and typescript setup",
     "main": "./dist/app.js",
     "type": "module",

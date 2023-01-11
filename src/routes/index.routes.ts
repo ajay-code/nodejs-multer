@@ -3,6 +3,7 @@ import apiRouter from './api/api.routes.js'
 import { isAuthenticated } from '#src/middleware/auth.middleware.js'
 import authRouter from './auth.routes.js'
 import getUserModel from '#src/models/user.model.js'
+import uploadRouter from './upload.routes.js'
 
 /**
  * Add all the routes to the express app
@@ -33,6 +34,7 @@ export const addRoutes = (app: Express) => {
 
     // add auth routes
     app.use(authRouter)
+    app.use(uploadRouter)
 
     // add api/v1 routes
     app.use('/api', isAuthenticated, apiRouter)
